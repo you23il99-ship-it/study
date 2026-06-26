@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Array객체 from() 메소드의 사용법 -->
+     <script>
+        //1.유사배열 객체 lengh 속성을 가지며 index 번호로 요소에 접근할수있는 배열객체
+        const arrayLike = { 0:'a',  1:'b' ,  2:'c', length:'3'};
+        
+        //유사배열 객체를 일반 배열로 변환하자
+        const arr =Array.from(arrayLike);
+
+
+        arr.forEach(function(charValue){
+            document.write(charValue,"<br>");
+        
+        });
+
+        //2. 반복가능 객체
+        // - 반복 가능한 객체는 symbol.itarator
+        const set = new set (['a','b','c']);
+
+        // 일반배열로 전환
+        const arr2 = Array.from(set)
+
+        console.log(JSON.stringify(arr));
+
+
+     </script>
+</body>
+</html>
