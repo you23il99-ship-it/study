@@ -3,22 +3,7 @@
 
 	
 
-	■ 지금까지와 달라지는 점
-	   지금까지 제네릭 <> 안에는 String, Integer처럼 자바가 만들어 둔 클래스만 넣었다.
-	   -> 이번에는 "내가 직접 만든 BoardDTO 클래스"를 넣는다!
-	      List<BoardDTO> : BoardDTO 객체만 저장할 수 있는 가변 배열
-*/
-//─────────────────────────────────────────────────────────────
-// 게시판 글 1건을 표현하는 DTO 클래스
-//
-// DB의 board 테이블                     BoardDTO 클래스
-//   no    (글 번호 컬럼)      <->        int    no
-//   title (제목 컬럼)         <->        String title
-//   writer(작성자 컬럼)       <->        String writer
-//   hit   (조회수 컬럼)       <->        int    hit
-//
-// -> 테이블의 행(row) 1개  =  BoardDTO 객체 1개
-//─────────────────────────────────────────────────────────────
+	
 
 import java.util.ArrayList;
 import java.util.List;
